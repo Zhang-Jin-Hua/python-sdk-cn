@@ -1,8 +1,8 @@
-# MCP Python SDK
+# MCP Python SDK（汉化文档）
 
 <div align="center">
 
-<strong>Python implementation of the Model Context Protocol (MCP)</strong>
+<strong>MCP Python实现</strong>
 
 [![PyPI][pypi-badge]][pypi-url]
 [![MIT licensed][mit-badge]][mit-url]
@@ -17,33 +17,33 @@
 ## Table of Contents
 
 - [MCP Python SDK](#mcp-python-sdk)
-  - [Overview](#overview)
-  - [Installation](#installation)
-    - [Adding MCP to your python project](#adding-mcp-to-your-python-project)
-    - [Running the standalone MCP development tools](#running-the-standalone-mcp-development-tools)
-  - [Quickstart](#quickstart)
-  - [What is MCP?](#what-is-mcp)
-  - [Core Concepts](#core-concepts)
-    - [Server](#server)
-    - [Resources](#resources)
-    - [Tools](#tools)
-    - [Prompts](#prompts)
-    - [Images](#images)
-    - [Context](#context)
-  - [Running Your Server](#running-your-server)
-    - [Development Mode](#development-mode)
-    - [Claude Desktop Integration](#claude-desktop-integration)
-    - [Direct Execution](#direct-execution)
-    - [Mounting to an Existing ASGI Server](#mounting-to-an-existing-asgi-server)
-  - [Examples](#examples)
+  - [概览](#overview)
+  - [安装](#installation)
+    - [集成MCP到你的python项目汇总](#adding-mcp-to-your-python-project)
+    - [运行标准的mcp开发工具](#running-the-standalone-mcp-development-tools)
+  - [快速开始](#quickstart)
+  - [什么是MCP?](#what-is-mcp)
+  - [核心概念](#core-concepts)
+    - [服务端Server](#server)
+    - [资源Resources](#resources)
+    - [工具集Tools](#tools)
+    - [提示词Prompts](#prompts)
+    - [图像Images](#images)
+    - [上下文Context](#context)
+  - [运行你的服务端](#running-your-server)
+    - [开发模式](#development-mode)
+    - [整合到Claude Desktop](#claude-desktop-integration)
+    - [直接执行](#direct-execution)
+    - [挂载到一个已存在的ASGI Server](#mounting-to-an-existing-asgi-server)
+  - [用例](#examples)
     - [Echo Server](#echo-server)
     - [SQLite Explorer](#sqlite-explorer)
-  - [Advanced Usage](#advanced-usage)
+  - [高级用法](#advanced-usage)
     - [Low-Level Server](#low-level-server)
-    - [Writing MCP Clients](#writing-mcp-clients)
+    - [编写MCP客户端](#writing-mcp-clients)
     - [MCP Primitives](#mcp-primitives)
     - [Server Capabilities](#server-capabilities)
-  - [Documentation](#documentation)
+  - [相关文档](#documentation)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -68,6 +68,13 @@ The Model Context Protocol allows applications to provide context for LLMs in a 
 - Create MCP servers that expose resources, prompts and tools
 - Use standard transports like stdio and SSE
 - Handle all MCP protocol messages and lifecycle events
+
+MCP（Model Context Protocol）允许应用程序以标准化方式为大型语言模型（LLM）提供上下文，将上下文提供与实际LLM交互的关注点分离。该Python SDK完整实现了MCP规范，可轻松实现以下功能：
+
+- 构建能连接任意MCP服务端的MCP客户端程序
+- 创建可暴露资源、提示词和工具的MCP服务端
+- 使用stdio（标准输入输出）和SSE（服务器发送事件）等标准传输协议
+- 处理所有MCP协议消息及生命周期事件
 
 ## Installation
 
